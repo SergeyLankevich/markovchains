@@ -114,7 +114,7 @@ def text_generator(minlength: int, maxlength: int, n: int):
                             start_word = start_words[start_word_index]
                         break
                 else:
-                    return 'Не удается сформировать предложение по заданным входным данным.'
+                    return 'ERROR. Cannot generate a sentence for the given input.'
                 sentence = sentence_generator(start_word, minlength, maxlength)
             text += sentence[0] + ' '
     return text
